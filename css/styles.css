@@ -119,7 +119,6 @@ p {
 }
 
 .navigation__link,
-.navigation__link--current,
 .contacts__link {
   display: block;
   padding-top: 32px;
