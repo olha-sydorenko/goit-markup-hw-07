@@ -1,0 +1,80 @@
+.team {
+  background-color: var(--bg-secondary-color);
+
+  &-list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--secondary-color);
+  }
+}
+
+.card {
+  display: inline-block;
+  text-align: center;
+  background-color: var(--white-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  &-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &-title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+  }
+
+  &-desc {
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+  }
+}
+
+.social-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.social-icon {
+  fill: var(--icons-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .social-link:hover &,
+  .social-link:focus & {
+    fill: var(--white-color);
+  }
+}

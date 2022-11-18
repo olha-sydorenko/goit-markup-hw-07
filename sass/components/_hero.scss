@@ -1,0 +1,37 @@
+.hero {
+  text-align: center;
+  color: var(--white-color);
+  background-image: var(--gradient), url(../images/hero-bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--bg-primary-color);
+
+  &__title {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 696px;
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  &__btn {
+    display: inline-block;
+    min-width: 216px;
+    height: 50px;
+    font-family: inherit;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    @extend %btn;
+    &:active {
+      background-color: var(--button-active-color);
+    }
+  }
+}
